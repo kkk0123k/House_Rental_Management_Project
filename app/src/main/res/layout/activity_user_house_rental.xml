@@ -1,0 +1,58 @@
+<!-- activity_user_house_rental.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/house_rental"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:background="@drawable/bg_rounded_input_field"
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Message Button -->
+    <Button
+        android:background="@drawable/bg_rounded_input_field"
+        android:id="@+id/btn_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Pay Rent Button -->
+    <Button
+        android:background="@drawable/bg_rounded_input_field"
+        android:id="@+id/btn_viewBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_bill"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Request Maintenance Button -->
+    <Button
+        android:background="@drawable/bg_rounded_input_field"
+        android:id="@+id/btn_requestMaintenance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/request_maintenance"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:background="@drawable/bg_rounded_input_field"
+        android:id="@+id/btn_leaveHouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/leave_house"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

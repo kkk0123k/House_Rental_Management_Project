@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Update House"
+                android:textColor="#03A9F4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/iv_houseImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/image_border"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house_icon_with_add_sign_vector"
+        android:padding="4dp"/>
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/iv_houseImage"
+        android:layout_alignParentStart="true"
+        android:text="@string/house_name_to_display" />
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_search"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/house_name_to_display"
+        android:minHeight="48dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_houseLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/et_search"
+        android:layout_alignParentStart="true"
+        android:text="@string/house_location" />
+
+    <EditText
+        android:id="@+id/et_houseLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_houseLocation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/enter_exact_house_location"
+        android:minHeight="48dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_totalRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@id/et_houseLocation"
+        android:layout_alignParentStart="true"
+        android:text="@string/number_of_room" />
+
+    <EditText
+        android:id="@+id/et_noOfRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_totalRoom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/enter_total_no_of_room"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_rentPerRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@id/et_noOfRoom"
+        android:layout_alignParentStart="true"
+        android:text="@string/rent_per_room" />
+
+    <EditText
+        android:id="@+id/et_rentPerRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rentPerRoom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/enter_rent_per_room"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/facilitiesAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/et_rentPerRoom"
+        android:layout_alignParentStart="true"
+        android:text="Facilities Available" />
+
+    <EditText
+        android:id="@+id/et_houseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:layout_below="@id/facilitiesAvailable"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/facilities_available_in_house_like_ac_washing_machine_kitchen_etc"
+        android:lines="5"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_updateHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_houseDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="27dp"
+        android:backgroundTint="@color/background3"
+        android:minHeight="48dp"
+        android:text="@string/update_house"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Member Name -->
+            <TextView
+                android:id="@+id/tv_memberName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:text="Name : Govind Singla"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- Member Phone Number -->
+            <TextView
+                android:id="@+id/tv_memberPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:text="Phone Number : 8950562633"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!-- Member Joining Date -->
+            <TextView
+                android:id="@+id/tv_memberJoiningDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:text="Joining Date : 29/12/2019"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!-- Member Age -->
+            <TextView
+                android:id="@+id/tv_memberAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:text="Age : 19"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!-- Member Job -->
+            <TextView
+                android:id="@+id/tv_roomNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_memberRent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_createBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:text="@string/create_bill"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
